@@ -1,0 +1,140 @@
+.notice {
+  width: 100%;
+  height: 300rpx;
+  background-color: blue;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.notice-bar {
+  margin: 10px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5em;
+  color: red;
+}
+
+.notice-con {
+  height: 250rpx;
+  /* margin:6px; */
+  overflow: auto;
+  text-align: left;
+  font-size: 1.1em;
+  color: #FFFFCC
+}
+.item{
+  margin-bottom: 15rpx;
+}
+.content {
+  margin: 5px auto;
+  width: 90%;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.linkput {
+  margin-right: 15rpx;
+  height: 80rpx;
+  width: 90%;
+  border: 1px solid #007046;
+}
+
+.linkbut {
+  height: 80rpx;
+  width: 5%;
+  color: #FFFFCC;
+  font-size: 0.9em;
+  border: 1px solid #007046;
+  background-color: #336699;
+}
+
+.linkbut:active {
+  background-color: #336666;
+  color: #FFCCFF;
+}
+
+.video {
+  margin: 15rpx 0;
+  display: flex;
+  width: 100%;
+}
+
+.video {
+  width: 100%;
+}
+.v{
+  width: 100%;
+}
+
+.but-bar {
+  margin: 70rpx 0;
+  width: 100%;
+  display: flex;
+}
+
+.but {
+  height: 80rpx;
+  color: #FFFFCC;
+  font-size: 0.9em;
+  border: 1px solid #007046;
+  background-color: #336699;
+}
+.but:active{
+  background-color:#251d42 ;
+}
+
+/* 进度条：样式 */
+.container {
+  background-color: darkslategrey;
+  border-radius: 11px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress_box {
+  position: relative;
+  width: 180px;
+  height: 180px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress_bg {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+}
+
+.progress_canvas {
+  width: 180px;
+  height: 180px;
+}
+
+.progress_text {
+  color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.progress_info {
+  font-size: 36rpx;
+  padding-left: 16rpx;
+  letter-spacing: 2rpx
+}
+
+.progress_dot {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background-color: #fb9126;
+}

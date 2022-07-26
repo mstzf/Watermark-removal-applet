@@ -1,0 +1,12 @@
+<view class="content">
+<image class="head_img" src="{{img}}"></image>
+<text user-select="text">{{content}}</text>
+</view>
+<view class="menu-bar" bindtap="showMenu">
+<image class="menu-img" src="/img/菜单.svg" wx:if="{{!isMenu}}"></image>
+<image class="menu-img" src="/img/cancel-test.svg" wx:if="{{isMenu}}"></image>
+</view>
+<view class="menu-news" wx:if="{{isMenu}}">
+<view class="menu-news-bar">往期日报</view>
+<view class="menu-news-bar" wx:for="{{news}}" wx:key='list' id="{{index}}" bindtap="chooseNews">{{item.date}}</view>
+</view>

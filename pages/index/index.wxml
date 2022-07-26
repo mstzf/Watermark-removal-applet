@@ -1,0 +1,42 @@
+<view>
+<view class="notice">
+<view class="notice-bar">
+<text class="notice">公告</text></view>
+<view class="notice-con">
+<view class="item"  wx:for="{{notice}}" wx:key="list" >{{index+1}}、{{item.notice}}</view>
+</view>
+</view>
+<view class="content">
+<view class="link">
+<input class="linkput" type="text" bindinput="inputEdit" model:value="{{inputValue}}" data-putlink />
+<button bindtap="copyText"class="linkbut">粘贴</button>
+</view>
+<view>
+<view class="video">
+<video class="v" src="{{showUrl}}"></video>
+</view>
+<view class="but-bar">
+<button class="but" bindtap="analysis">解析</button>
+<button class="but" bindtap="downloadAlbum">下载</button>
+</view>
+<!-- 下载进度条 -->
+<view class="container" wx:if="{{isDownload}}">
+  <view class='progress_box'>
+  <!-- 背景 灰色 -->
+    <canvas class="progress_bg" id="canvasProgressbg" canvas-id="canvasProgressbg"> </canvas>
+
+    <!-- 进度 -->
+    <canvas class="progress_canvas" id="canvasProgress" canvas-id="canvasProgress"> </canvas>
+
+    <!-- 中间显示的文本 -->
+    <view class="progress_text">
+      <view class="progress_dot"></view>
+      <text class='progress_info'> {{progress_txt}}</text>
+    </view>
+    
+  </view>
+</view>
+
+</view>
+</view>
+</view>

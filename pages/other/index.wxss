@@ -1,0 +1,16 @@
+.content {
+  padding: 25rpx;
+}
+.item{
+  margin-bottom: 35rpx;
+  width: 100%;
+  height: 200rpx;
+  background-color: blue;
+  border-radius: 15rpx;
+  box-shadow: 15rpx 15rpx 10rpx rgba(0, 0, 0, 0.664);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: white;
+}

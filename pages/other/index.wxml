@@ -1,0 +1,9 @@
+<!--pages/news/index.wxml-->
+<view class="content">
+  <view>
+  </view>
+  <view class="item" bindtap="news">
+    每天六十秒看世界
+  </view>
+  <view class="item" bindtap="dailyaricle">每日一文</view>
+</view>

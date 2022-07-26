@@ -1,0 +1,40 @@
+.content {
+  padding: 0 15rpx 80rpx 15rpx;
+}
+
+.head_img {
+  width: 100%;
+}
+
+.menu-bar {
+  position: fixed;
+  top: 10rpx;
+  right: 40rpx;
+  z-index: 999;
+}
+.menu-img{
+  width: 120rpx;
+  height: 120rpx;
+}
+.menu-news {
+  padding-bottom: 90rpx;
+  position: fixed;
+  top: 125rpx;
+  bottom: 0;
+  right: 20rpx;
+  z-index: 999;
+  overflow: scroll;
+  background-color: blue;
+  width: 500rpx;
+  font-size: 1.1em;
+  color: white;
+  border-radius: 15rpx;
+}
+
+.menu-news-bar {
+  height: 110rpx;
+  text-align: center;
+  line-height: 110rpx;
+  border-bottom: 1px solid white;
+  font-size: 1.2em;
+}

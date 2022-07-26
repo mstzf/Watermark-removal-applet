@@ -1,0 +1,14 @@
+<view class="content">
+<view class="title">{{title}}</view>
+<view class="author">{{author}}</view>
+<rich-text class="post" nodes="{{post}}"></rich-text>
+</view>
+
+<view class="menu-bar" bindtap="showMenu">
+<image class="menu-img" src="/img/菜单.svg" wx:if="{{!isMenu}}"></image>
+<image class="menu-img" src="/img/cancel-test.svg" wx:if="{{isMenu}}"></image>
+</view>
+<view class="menu-box" wx:if="{{isMenu}}">
+<view class="menu-box-bar">往期文章</view>
+<view class="menu-box-bar" wx:for="{{posts}}" wx:key='list' id="{{index}}" bindtap="choosePost">{{item.title}}</view>
+</view>

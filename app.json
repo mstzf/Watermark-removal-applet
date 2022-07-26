@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/other/index",
+    "pages/other/news/index",
+    "pages/other/dailyaricle/index"
+  ],
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#0099CC",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "视频下载",
+        "iconPath": "img/download.png",
+        "selectedIconPath": "img/download-choose.png"
+      },
+      {
+        "pagePath": "pages/other/index",
+        "text": "其他",
+        "iconPath": "img/other.png",
+        "selectedIconPath": "img/other-choose.png"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "去水印小助手m",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
+
